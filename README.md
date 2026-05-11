@@ -24,7 +24,19 @@ graph TD
 
 
 task 3
-
+```marmaid
+graph TD
+    A([Початок]) --> B[/Введіть x/]
+    B --> C[f = 0, k = 1]
+    C --> D{True}
+    D -- Так --> E{k > 7}
+    E -- Ні --> F[break]
+    E -- Так --> G["f += (2 * (x + 1)^(3-k)) / ((k+1)^x + k^3)"]
+    G --> H[k += 1]
+    H --> D
+    F --> I[/Вивід f/]
+    I --> J([Кінець])
+```
 task4.1
 ```marmaid
 graph TD
